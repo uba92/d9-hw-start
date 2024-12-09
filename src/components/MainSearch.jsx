@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import Job from './Job'
 
-import FavouritesIndicator from './FavouritesIndicator'
+// import FavouritesIndicator from './FavouritesIndicator'
 
 const MainSearch = () => {
   const [query, setQuery] = useState('')
@@ -32,7 +32,7 @@ const MainSearch = () => {
 
   return (
     <Container>
-      <FavouritesIndicator />
+      {/* <FavouritesIndicator /> */}
       <Row>
         <Col xs={10} className='mx-auto my-3'>
           <h1 className='display-1'>Remote Jobs Search</h1>
