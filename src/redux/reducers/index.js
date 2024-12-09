@@ -11,7 +11,9 @@ const mainReducer = (state = initialState, action) => {
         ...state,
         favourites: {
           ...state.favourites,
-          content: state.favourites.content.concat(action.payload),
+          content: state.favourites.content.includes(action.payload)
+            ? [...state.favourites.content]
+            : [...state.favourites.content, action.payload],
         },
       }
     default:
